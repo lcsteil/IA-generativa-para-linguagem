@@ -24,3 +24,7 @@ Trabalho de IA generativa para linguagem
 * Fine-Tunning
 
 **Questão 2**: Acesse os quizzes dos capítulos 1, 2 e 3 do curso de NLP da Hugging Face através do link: [Curso de NLP](https://huggingface.co/learn/nlp-course/).
+
+* Capítulo 1
+
+![capitulo_1](/images/nlp_capitulo_1.png)
