@@ -27,4 +27,9 @@ Trabalho de IA generativa para linguagem
 
 * Capítulo 1
 
-![capitulo_1](/images/nlp_capitulo_1.png)
+[capitulo_1](/images/nlp_capitulo_1.png)
+
+* Capítulo 2
+
+[capitulo_2](/images/nlp_capitulo_2.png)
+
