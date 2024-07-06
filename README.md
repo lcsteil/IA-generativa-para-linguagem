@@ -1,7 +1,7 @@
 # IA-generativa-para-linguagem
 Trabalho de IA generativa para linguagem
 
-*Questão 1*: Explique os seguintes conceitos fundamentais dos LLMs, fornecendo exemplos práticos e diagramas onde for relevante:
+**Questão 1**: Explique os seguintes conceitos fundamentais dos LLMs, fornecendo exemplos práticos e diagramas onde for relevante:
 
 * Pre-training       
 
@@ -16,10 +16,11 @@ Trabalho de IA generativa para linguagem
     de treinar um modelo do zero, utiliza-se todo o conhecimento adquirido no pré-treino e ajusta-se para a nova tarefa com um conjunto
     menor de dados
 
-
+    **Exemplo**: 
 
 * Embeddings
 * Transformers
 * Attention
 * Fine-Tunning
 
+**Questão 2**: Acesse os quizzes dos capítulos 1, 2 e 3 do curso de NLP da Hugging Face através do link: [Curso de NLP](https://huggingface.co/learn/nlp-course/).
