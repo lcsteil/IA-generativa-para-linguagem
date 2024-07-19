@@ -29,7 +29,7 @@ Trabalho de IA generativa para linguagem
 2. Anexe as screenshots a esta avaliação e explique brevemente os conceitos abordados em cada quiz.
 
 * Capítulo 1
-    1. Esse capítulo aborda conceitos fundamentais sobre modelos de linguagem natual e suas aplicações. Ele começa identificando que  modelo *roberta-large-mnli* no Hugging Face Hub é usado para a classificação de texto, determinando se duas setenças têm uma relação lógica.
+    1. Esse capítulo aborda conceitos fundamentais sobre modelos de linguagem natual e suas aplicações. Ele começa identificando que  modelo    *roberta-large-mnli* no Hugging Face Hub é usado para a classificação de texto, determinando se duas setenças têm uma relação lógica.
 
         Também foi explicado o uso do token *MASK* em modelos de preenchimento de lacunas, utilizado para prever tokens mascarados. Na seção sobre classificação zero-shot, destacou-se que o código falhará se não incluir a variável candidate_labels, necessária para classificar o texto corretamente.
 
@@ -39,13 +39,31 @@ Trabalho de IA generativa para linguagem
 
         Por fim, o quiz abordou a questão do viés nos modelos, destacando que este pode surgir de várias fontes, incluindo os dados de treinamento e as métricas otimizadas durante o treinamento.
         
-    2. [QUIZZ](/images/nlp_capitulo_1.png)
+    2. [QUIZ](/images/nlp_capitulo_1.png)
 
 * Capítulo 2
-    1. 
-    2. [QUIZZ](/images/nlp_capitulo_2.png)
+    1. O quiz aborda conceitos importantes sobre a pipeline de modelagem de linguagem, tokenização, e técnicas de processamento de sequências. Ele começa descrevendo a pipeline de modelagem de linguagem, onde o tokenizador lida com o texto e retorna IDs. Esses IDs são utilizados pelo modelo para fazer previsões, que podem ser convertidas de volta para texto pelo tokenizador.
+
+        A seguir, discute a dimensionalidade do tensor de saída de um modelo Transformer base, que inclui a sequência de comprimento, o tamanho do lote (batch size) e a dimensão oculta (hidden size).
+
+        O quiz também aborda a tokenização de subpalavras, com exemplos como WordPiece e Unigram, que são técnicas usadas para dividir palavras em subunidades menores.
+
+        O conceito de "model head" é explicado como um componente adicional, geralmente composto por uma ou algumas camadas, usado para converter as previsões do transformador em saídas específicas para a tarefa.
+
+        Em seguida, a AutoModel é descrita como um objeto que retorna a arquitetura correta com base no checkpoint do modelo, apenas precisando saber qual checkpoint utilizar para inicializar a arquitetura correta.
+
+        O quiz também menciona técnicas para lidar com sequências de diferentes comprimentos ao agrupar em lotes, como truncamento, padding e máscaras de atenção (attention masking).
+
+        A função SoftMax é discutida, com o propósito de transformar logits em valores compreensíveis e interpretáveis como probabilidades, com os valores resultantes limitados entre 0 e 1.
+
+        O método principal do tokenizador é descrito como o __call__, que pode codificar texto em IDs e IDs em previsões.
+
+        Além disso, o quiz exemplifica o resultado de um código de tokenização, onde a variável resultante contém uma lista de strings, cada uma sendo um token. É explicado que esses tokens devem ser convertidos em IDs para serem utilizados por um modelo.
+
+        Por fim, foi identificado que o tokenizador e o modelo devem sempre ser do mesmo checkpoint para evitar erros de compatibilidade.
+    2. [QUIZ](/images/nlp_capitulo_2.png)
 
 * Capítulo 3
     1. 
-    2. [QUIZZ](/images/nlp_capitulo_3.png)
+    2. [QUIZ](/images/nlp_capitulo_3.png)
 
