@@ -31,8 +31,8 @@ Trabalho de IA generativa para linguagem
 * Capítulo 1
     1. Esse capítulo aborda conceitos fundamentais sobre modelos de linguagem natual e suas aplicações. Ele começa identificando que  modelo *roberta=large-mnli* no Hugging Face Hub é usado para a classificação de texto, determinando se duas setenças têm uma relação lógica.
 
-    Também foi explicado o uso do token *MASK* em modelos de preenchimento de lacunas, utilizado para prever tokens mascarados. 
-    
+        Também foi explicado o uso do token *MASK* em modelos de preenchimento de lacunas, utilizado para prever tokens mascarados. 
+
     2. [QUIZZ](/images/nlp_capitulo_1.png)
 
 * Capítulo 2
