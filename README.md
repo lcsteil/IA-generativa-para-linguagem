@@ -32,7 +32,7 @@ Trabalho de IA generativa para linguagem
 
 * Attention
 
-    
+
 
 * Fine-Tunning
 
@@ -90,4 +90,6 @@ Trabalho de IA generativa para linguagem
         Este resumo sintetiza os principais pontos abordados, incluindo datasets de emoções e sarcasmo, formatação de entrada para modelos, benefícios de métodos de processamento de datasets, padding dinâmico, função de colação, instanciação de modelos pré-treinados, argumentos de treinamento e o uso da biblioteca Accelerate.
     2. [QUIZ](/images/nlp_capitulo_3.png)
 
- 
+ **Questão 3**: Análise de Dados com NER. Baixe o conjunto de dados de notícias disponível em: [Folha UOL News Dataset](https://www.kaggle.com/datasets/marlesson/news-of-the-site-folhauol).
+
+    A questão 3 foi desenvolvida no notebook [questao_3.ipynb](questao_3.ipynb)
