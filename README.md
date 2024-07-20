@@ -92,4 +92,9 @@ Trabalho de IA generativa para linguagem
 
  **Questão 3**: Análise de Dados com NER. Baixe o conjunto de dados de notícias disponível em: [Folha UOL News Dataset](https://www.kaggle.com/datasets/marlesson/news-of-the-site-folhauol).
 
-A questão 3 foi desenvolvida no notebook [questao_3.ipynb](questao_3.ipynb)
+A questão 3 foi desenvolvida no notebook [questao_3.ipynb](questao_3.ipynb), seguindo os passos abaixo:
+
+1. Após importar o CSV, os dados foram filtrados pela categoria "MERCADO" e com dados do primeiro trimestre de 2015
+2. Foi utilizado a o TRANSFORMERS, classificando por organizações "ORG" removendo palavras com menos de um caracter e que começam com "##" para limpar um pouco os resultados
+3. Em seguida foi feito um contador de frequencia das organizações encontradas
+4. Por fim foi ordenado em ordem decrescente para apresentar as organizações com maiores frequências
