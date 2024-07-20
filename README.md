@@ -16,11 +16,24 @@ Trabalho de IA generativa para linguagem
     de treinar um modelo do zero, utiliza-se todo o conhecimento adquirido no pré-treino e ajusta-se para a nova tarefa com um conjunto
     menor de dados
 
-    **Exemplo**: 
+    **Exemplo**: Pode ser utilizado em uma empresa que deseja monitorar a percepção de sua marca nas redes sociais. Utilizando  TRANSFER LEARNING  com um modelo pré-treinado como BERT, a empresa pode rapidamente classificar postagens em categorias como "positivo", "negativo" e "neutro".
 
 * Embeddings
+
+    São representações vetoriais de dados, geralmente palavras ou frases usadas em processamento de linguagem natural (NLP) e aprendizado de máquina. Elas permitem que máquinas entendam e manipulem texto de forma mais eficaz, transformando palavras em vetores de números que capturam o significado e as relações semânticas entre elas.
+
+    **Exemplo**: Pode ser utilizado para uma análise de setimentos em um conjunto de avaliações de produtos. A análise  de sentimentos envolve determinarse uma opinião expressa em um texto é positiva, negativa ou neutra.
+
 * Transformers
+
+    São uma arquitetura de modelo de aprendizado profundo que revolucionou o campo do processamento de linguagem natural (NLP) e, mais recentemente, a visão computacional.
+
+    **Exemplo**: Pode ser utilizado para analisar opiniões sobre produtos ou serviços para identificar tendências e preferências dos consumidores.
+
 * Attention
+
+    
+
 * Fine-Tunning
 
 **Questão 2**: Acesse os quizzes dos capítulos 1, 2 e 3 do curso de NLP da Hugging Face através do link: [Curso de NLP](https://huggingface.co/learn/nlp-course/).
@@ -64,6 +77,17 @@ Trabalho de IA generativa para linguagem
     2. [QUIZ](/images/nlp_capitulo_2.png)
 
 * Capítulo 3
-    1. 
+    1. O quiz aborda conceitos importantes de processamento de linguagem natural (NLP) e uso de modelos pré-treinados no Hugging Face. Primeiro, ele explora datasets específicos, como o de emoções do Twitter, que inclui seis emoções básicas (alegria, amor, raiva, surpresa, tristeza e medo) e exclui "confusão". O dataset de sarcasmo suporta a tarefa de classificação de sentimentos.
+
+        Sobre o modelo BERT, o quiz menciona que ele espera pares de sentenças formatados como [CLS] Tokens_da_sentenca_1 [SEP] Tokens_da_sentenca_2 [SEP]. O método Dataset.map() oferece benefícios como armazenamento em cache dos resultados, processamento em mini-batches e economia de memória ao processar elementos individualmente.
+
+        O padding dinâmico ajusta o tamanho do lote ao comprimento máximo das sentenças no lote atual, resultando em batches com diferentes formas. A função de colação garante que todas as sequências em um lote tenham o mesmo comprimento, facilitando o processamento conjunto.
+
+        Quando se instancia classes AutoModelForXxx com um modelo pré-treinado para uma tarefa diferente, a cabeça do modelo pré-treinado é descartada e uma nova cabeça, adequada para a nova tarefa, é instanciada com pesos aleatórios.
+
+        O TrainingArguments contém todos os hiperparâmetros necessários para treinamento e avaliação com a API Trainer. A biblioteca Accelerate facilita o treinamento distribuído, permitindo o uso de múltiplas GPUs e TPUs para acelerar o processo.
+
+        Este resumo sintetiza os principais pontos abordados, incluindo datasets de emoções e sarcasmo, formatação de entrada para modelos, benefícios de métodos de processamento de datasets, padding dinâmico, função de colação, instanciação de modelos pré-treinados, argumentos de treinamento e o uso da biblioteca Accelerate.
     2. [QUIZ](/images/nlp_capitulo_3.png)
 
+ 
