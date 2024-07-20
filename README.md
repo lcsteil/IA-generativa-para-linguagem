@@ -92,4 +92,4 @@ Trabalho de IA generativa para linguagem
 
  **Questão 3**: Análise de Dados com NER. Baixe o conjunto de dados de notícias disponível em: [Folha UOL News Dataset](https://www.kaggle.com/datasets/marlesson/news-of-the-site-folhauol).
 
-    A questão 3 foi desenvolvida no notebook [questao_3.ipynb](questao_3.ipynb)
+A questão 3 foi desenvolvida no notebook [questao_3.ipynb](questao_3.ipynb)
