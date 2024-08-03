@@ -34,7 +34,10 @@ Trabalho de IA generativa para linguagem
 
 
 
+
 * Fine-Tunning
+
+----------------------------------------------------
 
 **Questão 2**: Acesse os quizzes dos capítulos 1, 2 e 3 do curso de NLP da Hugging Face através do link: [Curso de NLP](https://huggingface.co/learn/nlp-course/).
 
@@ -90,6 +93,8 @@ Trabalho de IA generativa para linguagem
         Este resumo sintetiza os principais pontos abordados, incluindo datasets de emoções e sarcasmo, formatação de entrada para modelos, benefícios de métodos de processamento de datasets, padding dinâmico, função de colação, instanciação de modelos pré-treinados, argumentos de treinamento e o uso da biblioteca Accelerate.
     2. [QUIZ](/images/nlp_capitulo_3.png)
 
+----------------------------------------------------
+
  **Questão 3**: Análise de Dados com NER. Baixe o conjunto de dados de notícias disponível em: [Folha UOL News Dataset](https://www.kaggle.com/datasets/marlesson/news-of-the-site-folhauol).
 
 A questão 3 foi desenvolvida no notebook [questao_3.ipynb](questao_3.ipynb), seguindo os passos abaixo:
@@ -98,3 +103,32 @@ A questão 3 foi desenvolvida no notebook [questao_3.ipynb](questao_3.ipynb), se
 2. Foi utilizado a o TRANSFORMERS, classificando por organizações "ORG" removendo palavras com menos de um caracter e que começam com "##" para limpar um pouco os resultados
 3. Em seguida foi feito um contador de frequencia das organizações encontradas
 4. Por fim foi ordenado em ordem decrescente para apresentar as organizações com maiores frequências
+
+----------------------------------------------------
+
+ **Questão 4**: Analise os seguintes prompts e identifique por que eles poderiam gerar respostas insatisfatórias ou irrelevantes.
+
+* Exemplo 1: "Escreva sobre cachorros."
+
+    A frase não define o objetivo desejado. É necessário mais detalhes como o que quer que seja escrito sobre cachorros, raça? cuidados? cachorros?, sem mais detalhes a resposta pode ser genérica, incompleta ou irrelevante.
+
+* Exemplo 2: "Explique física."
+
+    Como no exemplo 1, a física é um campo de estudo muito abrangente, com diversas divisões, a falta de detalhes pode ser que retorne uma resposta muito geral, focar em um contexto irrelevante ou retornar uma reposta muito completa para o público-alvo.
+
+----------------------------------------------------
+
+**Questão 5**: O prompt "Descreva a história da internet." foi mal formulado. Aplique técnicas de engenharia de prompts para melhorá-lo. Reformule o prompt para melhorar a especificidade e a qualidade da resposta. Justifique as mudanças feitas e explique como elas contribuem para obter uma resposta mais eficaz e relevante.
+
+O prompt informado é muito vago e aberto, podendo gerar respostas muito amplas e superficiais. Não especifica quais aspectos da história devem ser cobertos, como datas importantes, porsonagens chave, etc. Falta especificar o nível de detalhamento esperado na resposta.
+
+*Prompt reformulado*: Descreva a história da internet, destacando suas principais frases de desenvolvimento, desde a criação da arpanet até o surgimento das redes sociais. Inclua datas importantes, tecnologias chaves e o impacto social econômico ao longo do tempo.
+
+----------------------------------------------------
+
+**Questão 6**: Aplique a técnica de Chain of Thought (CoT) para melhorar o prompt "Explique como funciona a energia solar.", detalhando o raciocínio necessário para que o modelo forneça uma resposta completa e coerente. Explique como a aplicação da técnica CoT melhora a resposta do modelo.
+
+    Para utilizar a técnica de Chain of Thought (CoT), precisamos dividir o processo em etapas lógicas que guiem o modelo a fornecer uma reposta completa e coerente. Isso envolve a decomposição da pergunta em subquestões que abordem diferentes aspectos do funcionamento de energia solar.
+
+    1. Começar com a definição básica de energia solar
+    2. Explicar como o princ
