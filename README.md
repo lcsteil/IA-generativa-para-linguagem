@@ -32,10 +32,15 @@ Trabalho de IA generativa para linguagem
 
 * Attention
 
+    É uma tecnica usada em redes neurais, particularmente em modelos de linguagem, para focar em partes específicas de entrada (texto) ao gerar uma saída. Ele permite que o modelo dê mais peso a palavras ou tokens importantes, ajudando a capturar dependências e relações contextuais de longa distância.
 
-
+    **Exemplo**: Condiderando a frase "O gato sentou no tapete". Se quisermos prever a palava "tapete" dada a palavra "gato", a atenção ajudaria a entender que "tapete" é relevante porque "gato" esá "sentado" nele.
 
 * Fine-Tunning
+
+    É o processo de adaptar um modelo pré-treinado (como um LLM) a uma tarefa específica, ajustando seus pesos com base em um conjunto de dados específico da tarea.
+
+    **Exemplo**: Suponha que temos um modelo pré-treinado em um grande corpus de textos gerais e queremos adaptá-lo para detectar spam em e-mails. Utilizamos um conjunto de dados específicos de e-mails marcadaos como spam e não-spam para ajustar o modelo pré-treinado, otimizando-o para essa tarefa.
 
 ----------------------------------------------------
 
@@ -128,7 +133,20 @@ O prompt informado é muito vago e aberto, podendo gerar respostas muito amplas 
 
 **Questão 6**: Aplique a técnica de Chain of Thought (CoT) para melhorar o prompt "Explique como funciona a energia solar.", detalhando o raciocínio necessário para que o modelo forneça uma resposta completa e coerente. Explique como a aplicação da técnica CoT melhora a resposta do modelo.
 
-    Para utilizar a técnica de Chain of Thought (CoT), precisamos dividir o processo em etapas lógicas que guiem o modelo a fornecer uma reposta completa e coerente. Isso envolve a decomposição da pergunta em subquestões que abordem diferentes aspectos do funcionamento de energia solar.
+Para utilizar a técnica de Chain of Thought (CoT), precisamos dividir o processo em etapas lógicas que guiem o modelo a fornecer uma reposta completa e coerente. Isso envolve a decomposição da pergunta em subquestões que abordem diferentes aspectos do funcionamento de energia solar.
 
-    1. Começar com a definição básica de energia solar
-    2. Explicar como o princ
+1. *Definição*: Começar com definição básica do que é energia solar
+2. *Principio básico*: Explicar o conceito básico de como a energia solar é convertida em eletrecidade
+3. *Componentes principais*: Descrever os componentes principais de uma energia solar, como painéis solares e baterias.
+4. *Processo de conversão*: Detalhar o processo de conversão dentro dos painéis solares.
+5. *Distribuição de eneregia*: Explicar como a eletrecidade é gerada é distribuidad e utilizada em um sistema residencial ou comercial.
+6. *Benefícios e desafios*: Explicar os benefícios e desacios associados ao uso de energia solar.
+
+A divisão do problema em subquestões garante que nenhum aspecto importante seja omitido. Cada etapa permite uma exploração mais profunda de cada componente do funcionamento da energia solar e a estrutura lógica facilita a organização das informações, tornando uma resposta mais fácil de entender e seguir.
+
+*Exemplo e de prompt*: Explique como funciona a energia solar detalhadamente. Inicie definindo o que é energia solar e o princípio básico de como a luz é convertida em eletrecidade. Descreva os componentes principais de um sistema de energia solar, incluindo painéis solares, inversores e baterias. Explique o processo de conversão da luz em eletrecidade dentro dos painéis solares. Detalhe como a eletricidade gerada é distribuída e utilizada em um sistema residencial e comercial. Por fim, discuta os benefícios e desafios associados ao uso da energia solar.
+
+----------------------------------------------------
+
+**Questão 7**: Escolha uma aplicação para desenvolver utilizando Streamlit, LLM e LangChain. Crie um aplicativo interativo que demonstre o uso de LLMs para resolver um problema específico.
+
