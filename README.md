@@ -150,3 +150,39 @@ A divisão do problema em subquestões garante que nenhum aspecto importante sej
 
 **Questão 7**: Escolha uma aplicação para desenvolver utilizando Streamlit, LLM e LangChain. Crie um aplicativo interativo que demonstre o uso de LLMs para resolver um problema específico.
 
+1. Descreva a aplicação escolhida e os objetivos principais do projeto.
+
+A aplicação escolhida foi o sumarizador de Artigos.
+
+O objetivo é desenvolver um aplicativo que permita ao usuário inserir o texto de um artigo e obter um resumo conciso do conteúdo.
+
+2. Explique a arquitetura do aplicativo, incluindo como o Streamlit, LLM e LangChain são utilizados.
+
+    1. O StreamLite é utilizado para criar a interface para o usuário informar o texto e a chave do OPENAI.
+    2. O LangChain é uma biblioteca utilizada para processar e manipular o texto, bem como carregar o modelo de sumarização.
+    3. No LLM, foi utilizado o modelo de linguagem da OpenAI para gerar a sumarização do texto fornecido.   
+    4. Fluxo do aplicativo:
+        1. O usuário insere o texto a ser resumido e a chave da API do OpenAI
+        2. Processamento:
+            * O texto é dividido em partes menores
+            * Cada parte é encapsulada em um objeto "Document"
+            * A cadeia de sumarização é carregada e executada nos documentos
+        3. O resultado é gerado e exibido para o usuário na tela.
+
+3. Implemente o aplicativo e forneça o código-fonte, junto com instruções para execução.
+
+O aplicativo foi implementado no arquivo [questao_7.py](questao_7.py)
+
+4. Apresente evidências e exemplos de uso do aplicativo e discuta os resultados obtidos.
+
+Foi utilizado o texto abaixo:
+
+> Sempre que ocorre um entusiasmo com os resultados de uma tecnologia, existe uma tendência da mídia em fornecer definições e explicações, por vezes não muito precisas, dos seus principais aspectos. Isso é, certamente, o que ocorre com a IA nos dias de hoje. Em primeiro lugar, cabe ressaltar que não existe uma definição acadêmica, propriamente dita, do que vem a ser IA. Trata-se certamente de um ramo da ciência/engenharia da computação, e portanto visa desenvolver sistemas computacionais que solucionam problemas. Para tal, utiliza um número diverso de técnicas e modelos, dependendo dos problemas abordados. Portanto, é inadequado utilizar-se expressões como “a IA da empresa X”; mais adequado (porém com menos apelo) seria dizer “um sistema da empresa X que utiliza técnicas de IA"
+
+Retornando:
+
+> The media often provides vague definitions of AI when there is excitement about its results. There is no clear academic definition for AI, but it is a branch of computer science/engineering that aims to solve problems using various techniques and models. It is inappropriate to use phrases like "X company's AI", and it is more accurate to say "a system from X company that utilizes AI techniques".
+
+![Resultado](/images/questao_7.png)
+
+
